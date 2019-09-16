@@ -1,0 +1,252 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Linearlayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+    android:background="#F0FFFF"
+    tools:context="com.example.homework1.MainActivity" >
+
+    
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" 
+        android:background="#F5F5F5"
+        >
+
+        <ImageView
+            android:id="@+id/image11"
+            android:gravity="center"
+            android:layout_width="135dp"
+            android:layout_height="135dp" 
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:id="@+id/image12"
+            android:gravity="center"
+            android:layout_width="135dp"
+            android:layout_height="135dp" 
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="#F5F5F5"
+        android:layout_below="@id/LinearLayout2">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:gravity="center"
+            android:layout_width="135dp"
+            android:layout_height="135dp" 
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:id="@+id/image10"
+            android:gravity="center"
+            android:layout_width="135dp"
+            android:layout_height="135dp" 
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/LinearLayout3"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_marginBottom="10dp" 
+        >
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/LinearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearLayout7"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/image5"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/image6"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/image7"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/image8"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/image9"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/LinearLayout4"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:textSize="52sp"
+            android:gravity="center"
+            android:background="@drawable/numplate"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:background="#F5F5F5"
+        
+        android:layout_above="@+id/LinearLayout8"
+        >
+        
+                <Button
+            android:id="@+id/button_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/round_button1"
+            android:text="촬영" />
+
+        <Button
+            android:id="@+id/button_go"
+            android:layout_width="wrap_content"
+            android:layout_height="71dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/round_button2"
+            android:text="시작" />
+        
+        <Button
+            android:id="@+id/button_alb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/round_button1"
+            android:text="앨범" />
+        
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#F5F5F5"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        >
+
+        <Button
+            android:id="@+id/rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/round_button1"
+            android:layout_marginRight="10dp"
+            android:text="회전" 
+            />
+        
+ 
+        
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/round_button1"
+            android:layout_marginRight="10dp"
+            android:text="옵션" 
+            />
+        
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/round_button1"
+            android:text="리셋" 
+            />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LinearLayout7"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:max="100"
+        android:minHeight="10dp"
+        android:minWidth="40dp" />
+
+</RelativeLayout>
